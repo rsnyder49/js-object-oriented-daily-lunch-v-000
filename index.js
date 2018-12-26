@@ -40,7 +40,7 @@ class Customer {
      });
    }
    meals() {
-     return this.deliveries().map(delivery => {
+     return this.deliveries().map(delivery =>  {
        return delivery.meal();
      });
    }
@@ -61,10 +61,10 @@ class Meal {
     store.meals.push(this);
   }
   deliveries() {
-     return store.deliveries.filter(delivery => {
-       return delivery.customerId === this.id;
-     });
-   }
+    return store.deliveries.filter(delivery => {
+      return delivery.customerId === this.id;
+    });
+  }
    meals() {
      return this.deliveries().map(delivery => {
        return delivery.meal();
@@ -90,17 +90,17 @@ class Delivery {
   meal() {
      return store.meals.find(meal => {
        return meal.id === this.mealId;
-     });
-   }
+    });
+  }
    customer() {
      return store.customers.find(customer => {
        return customer.id === this.customerId;
-     });
+    });
    }
    neighborhood() {
      return store.neighborhoods.find(neighborhood => {
        return neighborhood.id === this.neighborhoodId;
-    });
+   });
   }
 }
 
