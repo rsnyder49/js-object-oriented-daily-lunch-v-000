@@ -64,7 +64,7 @@ class Delivery {
     this.mealId = mealId;
     this.neighborhoodId = neighborhoodId;
     this.custormerId = custormerId;
-    this.id = ++deliverId;
+    this.id = ++deliveryId;
   }
 }
 
