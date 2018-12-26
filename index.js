@@ -62,6 +62,9 @@ let deliveryId = 0;
 class Delivery {
   constructor(mealId, neighborhoodId, custormerId) {
     this.mealId = mealId;
+    this.neighborhoodId = neighborhoodId;
+    this.custormerId = custormerId;
+    this.id = ++deliverId;
   }
 }
 
