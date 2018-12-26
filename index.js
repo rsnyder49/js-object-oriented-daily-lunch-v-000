@@ -21,7 +21,11 @@ class Customer {
   }
 }
 
+let mealID = 0;
 
+class Meal {
+  cons
+}
 
 
 
