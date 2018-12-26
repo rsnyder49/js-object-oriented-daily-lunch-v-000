@@ -28,8 +28,14 @@ class Meal {
     this.title = title;
     this.price = price;
     this.id = ++mealId;
+    store.meals.push(this);
   }
 }
 
+let deliveryId = 0;
+
+class Delivery {
+  constructor(mealId, neighborhoodId, custormerId)
+}
 
 
