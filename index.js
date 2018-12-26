@@ -25,7 +25,7 @@ class Neighborhood {
   }
 }
 
-let custormerId = 0;
+let customerId = 0;
 
 class Customer {
   constructor(name) {
