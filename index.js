@@ -40,6 +40,21 @@ class Meal {
     this.id = ++mealId;
     store.meals.push(this);
   }
+  deliveries() {
+     return store.deliveries.filter(delivery => {
+       return delivery.customerId === this.id;
+     });
+   }
+   meals() {
+     return this.deliveries().map(delivery => {
+       return delivery.meal();
+     });
+   }
+   totalSpent() {
+     return this.meals().reduce(function (total, meal) {
+       return total + meal.price;
+    }, 0);
+  }
 }
 
 let deliveryId = 0;
