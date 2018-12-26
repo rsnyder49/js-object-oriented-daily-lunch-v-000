@@ -12,7 +12,7 @@ class Neighborhood {
   deliveries() {
     return store.deliveries.filter(delivery => {
       return delivery.neighborhoodId === this.id;
-     });
+    });
   }
   customers() {
     return store.customers.filter(customer => {
@@ -95,7 +95,7 @@ class Delivery {
    customer() {
      return store.customers.find(customer => {
        return customer.id === this.customerId;
-    });
+     });
    }
    neighborhood() {
      return store.neighborhoods.find(neighborhood => {
