@@ -69,6 +69,7 @@ class Delivery {
     this.neighborhoodId = neighborhoodId;
     this.custormerId = custormerId;
     this.id = ++deliveryId;
+    store.deliveries.push(this);
   }
   meal() {
      return store.meals.find(meal => {
