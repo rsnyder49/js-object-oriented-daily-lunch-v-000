@@ -7,10 +7,22 @@ class Neighborhood {
   constructor(name) {
     this.name = name;
     this.id = ++neighborhoodId;
-    store.neighborhood.push(this);
+    store.neighborhoods.push(this);
   }
 }
 
 let custormerId = 0;
 
-class C
+class Customer {
+  constructor(name) {
+  this.name = name;
+  this.id = ++custormerId;
+  store.customers.push(this);
+  }
+}
+
+
+
+
+
+
