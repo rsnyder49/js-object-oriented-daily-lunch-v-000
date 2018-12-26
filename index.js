@@ -21,12 +21,15 @@ class Customer {
   }
 }
 
-let mealID = 0;
+let mealId = 0;
 
 class Meal {
-  cons
+  constructor(title, price) {
+    this.title = title;
+    this.price = price;
+    this.id = ++mealId;
+  }
 }
-
 
 
 
