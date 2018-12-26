@@ -66,6 +66,21 @@ class Delivery {
     this.custormerId = custormerId;
     this.id = ++deliveryId;
   }
+  meal() {
+     return store.meals.find(meal => {
+       return meal.id === this.mealId;
+     });
+   }
+   customer() {
+     return store.customers.find(customer => {
+       return customer.id === this.customerId;
+     });
+   }
+   neighborhood() {
+     return store.neighborhoods.find(neighborhood => {
+       return neighborhood.id === this.neighborhoodId;
+    });
+  }
 }
 
 
