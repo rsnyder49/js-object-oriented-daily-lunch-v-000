@@ -19,6 +19,10 @@ class Neighborhood {
       return customer.neighborhoodId === this.id;
     });
   }
+  meals() {
+    let allMeals = this.deliveries().map(customer => customer.meal());
+    return [...new Set(allMeals)];
+  }
 }
 
 let custormerId = 0;
