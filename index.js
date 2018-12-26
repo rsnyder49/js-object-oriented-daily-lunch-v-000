@@ -13,12 +13,12 @@ class Neighborhood {
     return store.deliveries.filter(delivery => {
       return delivery.neighborhoodId === this.id;
      });
-   }
-   customers() {
-     return store.customers.filter(customer => {
-       return customer.neighborhoodId === this.id;
-     });
-   }
+  }
+  customers() {
+    return store.customers.filter(customer => {
+      return customer.neighborhoodId === this.id;
+    });
+  }
 }
 
 let custormerId = 0;
