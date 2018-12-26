@@ -64,7 +64,7 @@ class Meal {
 let deliveryId = 0;
 
 class Delivery {
-  constructor(mealId, neighborhoodId, custormerId) {
+  constructor(mealId, neighborhoodId, customerId) {
     this.mealId = mealId;
     this.neighborhoodId = neighborhoodId;
     this.custormerId = custormerId;
