@@ -35,7 +35,9 @@ class Meal {
 let deliveryId = 0;
 
 class Delivery {
-  constructor(mealId, neighborhoodId, custormerId)
+  constructor(mealId, neighborhoodId, custormerId) {
+    
+  }
 }
 
 
